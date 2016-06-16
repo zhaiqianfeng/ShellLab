@@ -2,5 +2,6 @@ i=1
 for file in `ls *zip`
 do
 	unzip $file -d $i
-	i=`expr $i + 1`
+	#i=`expr $i + 1`
+	i=$[$i+1]
 done
